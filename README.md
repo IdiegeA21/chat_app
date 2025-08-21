@@ -159,7 +159,7 @@ Environment variables are loaded from `.env`.
 
 ## 📂 Project Structure
 ```
-vg-backend-assement/        # Project root
+chat_app/        # Project root
 ├── src/                    # Application source code
 │   ├── config/             # Configuration files (DB, JWT, etc.)
 │   ├── controllers/        # Request handlers
