@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_USER=chat_user
+      - DB_PASSWORD=chat_password
+      - DB_NAME=chat_app
+      - JWT_SECRET=your-production-jwt-secret
+    depends_on:
+      - mysql
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_password
+      - MYSQL_DATABASE=chat_app
+      - MYSQL_USER=chat_user
+      - MYSQL_PASSWORD=chat_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  mysql_data:
