@@ -6,7 +6,7 @@ import {
   getRoomMembers,
   leaveRoom
 } from '../controllers/roomController';
-import { authenticateToken } from '../middleware/auth';
+import { authenticateToken } from '../middlewares/auth';
 import { validateRequest } from '../middlewares/validation';
 import { createRoomSchema, joinRoomSchema } from '../utils/validation';
 
