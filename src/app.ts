@@ -38,7 +38,7 @@ app.use(cors({
 }));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
-// app.use(apiLimiter);
+app.use(apiLimiter);
 
 // Routes
 app.use('/api/auth', authRoutes);
@@ -132,6 +132,6 @@ process.on('SIGINT', async () => {
   }
 });
 
-// startServer();
+startServer();
 
 export { app, server, io };

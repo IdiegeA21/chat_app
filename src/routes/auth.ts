@@ -7,8 +7,8 @@ import { registerSchema, loginSchema } from '../utils/validation';
 
 const router = Router();
 
-router.post('/register', validateRequest(registerSchema), register);
-router.post('/login', validateRequest(loginSchema), login);
+router.post('/register', authLimiter, validateRequest(registerSchema), register);
+router.post('/login', authLimiter, validateRequest(loginSchema), login);
 router.post('/logout', authenticateToken, logout);
 router.get('/profile', authenticateToken, getProfile);
 
