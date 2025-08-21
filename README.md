@@ -158,7 +158,7 @@ Environment variables are loaded from `.env`.
 ---
 
 ## 📂 Project Structure
-
+```
 vg-backend-assement/        # Project root
 ├── src/                    # Application source code
 │   ├── config/             # Configuration files (DB, JWT, etc.)
@@ -180,12 +180,13 @@ vg-backend-assement/        # Project root
 ├── tsconfig.json           # TypeScript configuration
 ├── docker-compose.yml      # Optional Docker setup
 └── README.md               # Project documentation
+```
 ---
 
 ## 📄 Submission
 
-* Hosted API: \[Deployed URL here]
-* GitHub Repo: \[Repo Link]
+* Hosted API: \[coming soon] ps: yet to deploy on railway
+* GitHub Repo: \[https://github.com/IdiegeA21/chat_app]
 
 ---
 
