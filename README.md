@@ -2,7 +2,7 @@
 
 A real-time chat backend built with **Node.js, Express, TypeScript, Socket.IO, and MySQL**.
 
-This project was developed as part of a backend assessment for the **Node.js Backend Developer** role. It implements authentication, chat rooms, real-time messaging, and user presence tracking.
+This project was developed as part of a test version for implementing chat rooms into ALLM for the **Node.js Backend Developer**. It implements authentication, chat rooms, real-time messaging, and user presence tracking.
 
 ---
 
@@ -181,13 +181,6 @@ chat_app/        # Project root
 ├── docker-compose.yml      # Optional Docker setup
 └── README.md               # Project documentation
 ```
----
-
-## 📄 Submission
-
-* Hosted API: \[coming soon] ps: yet to deploy on railway
-* GitHub Repo: \[https://github.com/IdiegeA21/chat_app]
-
 ---
 
 ## 👨‍💻 Author
